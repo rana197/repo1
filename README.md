@@ -9,6 +9,6 @@ Neural networks toolbox in MATLAB
 
 Run main_NN.m
 
-## Authors
 
-* **Thommen George Karimpanal** 
+
+All credit goes to **Thommen George Karimpanal** . I am exploring it for learning and try to reproduce the experimental result.
