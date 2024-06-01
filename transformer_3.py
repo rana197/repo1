@@ -19,7 +19,6 @@ split_index = int(len(df) * train_proportion)
 df_train = df[:split_index]
 df_test = df[split_index:]
 
-
 spots_train = df_train[['timestep_time', 'Del_V','vehicle_angle', 'vehicle_x','vehicle_y']].values
 spots_test = df_test[['timestep_time', 'Del_V','vehicle_angle', 'vehicle_x','vehicle_y']].values
 
@@ -34,7 +33,6 @@ def to_sequences(seq_size, obs):
         y.append(after_window[-3:])  # Output columns: 'vehicle_x','vehicle_y', angle
 
     return np.array(x), np.array(y)
-
 
 SEQUENCE_SIZE = 10
 x_train, y_train = to_sequences(SEQUENCE_SIZE, spots_train)
